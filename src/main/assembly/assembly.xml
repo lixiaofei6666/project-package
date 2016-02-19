@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+	<id>installer</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>
+                ${project.build.directory}/generated-resources/tomcat/apache-tomcat-7.0.55
+			</directory>
+			<outputDirectory>apache-tomcat-${tomcat.version}-test</outputDirectory>
+			<excludes>
+				<exclude>**/*.pl</exclude>
+				<exclude>**/.gitignore</exclude>
+			</excludes>
+			<fileMode>0644</fileMode>
+			<directoryMode>0755</directoryMode>
+		</fileSet>
+	</fileSets>
+</assembly>	
